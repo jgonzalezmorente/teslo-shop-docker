@@ -31,4 +31,10 @@ Ejecutar este comando
 docker compose -f docker-compose.prod.yml up
 ```
 
+```
+docker buildx build \
+  --platform linux/amd64,linux/arm64 \
+  -t registry.digitalocean.com/devtalles-registry-dev-nio/jgonzalezmorente/teslo-shop:1.2.0 --push .
+```
+
 
